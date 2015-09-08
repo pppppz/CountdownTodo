@@ -52,7 +52,7 @@ public class MainList_Fragment extends Fragment {
     private List<Task> mData = new ArrayList<>();
     RecyclerView.OnItemTouchListener recycleViewOnTouchListener = new RecyclerItemClickListener(fragmentActivity, new RecyclerItemClickListener.OnItemClickListener() {
         @Override
-        public void onItemClick(View view, int position) {
+        public void onItemClick(View view, final int position) {
 
             final Task task = getItem(position);
             final TextView taskTitle = (TextView) view.findViewById(R.id.task_title);
@@ -111,7 +111,7 @@ public class MainList_Fragment extends Fragment {
                                         try {
                                             task.delete();
                                             Toast.makeText(fragmentActivity, "Deleted", Toast.LENGTH_SHORT).show();
-                                            mData.notify();
+                                            mData.remove(position);
                                         } catch (ParseException e) {
                                             e.printStackTrace();
                                         }

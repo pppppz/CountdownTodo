@@ -3,6 +3,7 @@ package com.app.countdowntodolist;
 
 import android.app.DialogFragment;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -57,7 +59,6 @@ public class AddTask_Fragment extends Fragment {
                 t.setTitle(TaskInput.getText().toString());
                 t.setCompleted(false);
                 t.setDescription(DesInput.getText().toString());
-                year = year - 1900;
                 DateTime date = new DateTime(year, month, day, hour, minute);
                 t.setDeadline(date.toDate());
                 //  t.saveEventually(); // save in to parse.com
@@ -65,14 +66,15 @@ public class AddTask_Fragment extends Fragment {
                 t.saveInBackground(new SaveCallback() {
                     @Override
                     public void done(ParseException e) {
+                        //hidden soft keyboard before swap fragment
+                        InputMethodManager inputManager = (InputMethodManager) fragmentActivity.getSystemService(Context.INPUT_METHOD_SERVICE);
+                        inputManager.hideSoftInputFromWindow(fragmentActivity.getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
                         dialog.dismiss();
                         Toast.makeText(fragmentActivity, "Add task completed", Toast.LENGTH_SHORT).show();
+
                         //finish this class and swap to Main class
                         Fragment fragment = new MainList_Fragment();
                         FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
-
-                        //hidden soft keyboard before swap fragment
-                        fragmentActivity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
                         new switchFragment(fragment, fragmentManager).doSwitch();
 
                     }
