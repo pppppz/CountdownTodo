@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bolts-android-1.2.0-javadoc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/Parse-1.9.1/bolts-android-1.2.0-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
