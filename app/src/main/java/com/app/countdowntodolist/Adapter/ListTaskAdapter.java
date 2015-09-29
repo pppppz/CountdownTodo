@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.CountDownTimer;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,36 +44,33 @@ public class ListTaskAdapter extends RecyclerView.Adapter<ListTaskAdapter.ViewHo
 
         /// Calculate countdown time
         task.getdateDeadline();
-        DateTime thisTime = DateTime.now();
-        DateTime thatTime = new DateTime(task.getdateDeadline());
+        DateTime now = DateTime.now();
+        DateTime dueToTime = new DateTime(task.getdateDeadline());
 
-        // Seconds seconds = Seconds.secondsBetween(thisTime, thatTime);
-        final Duration duration = new Duration(thisTime, thatTime);
-
-
+        final Duration duration = new Duration(now , dueToTime);
         final long durationMili = duration.getMillis();
-        int countTime;
+        final int countTime;
 
-        if (durationMili > 172800000) { // more than 2 day reduce every 1 hrs
+
+        if (duration.getStandardDays() > 2) { // more than 2 day reduce every 1 hrs
             countTime = 3600000;
-        } else if (durationMili > 3600000) { // more than 1 hrs reduce reduce every 1 minute
+        } else if (duration.getStandardHours() > 1) { // more than 1 hrs reduce reduce every 1 minute
             countTime = 3600000;
-        } else if (durationMili > 60000) { // more than 1 minute reduce every 1 minutes
+        } else if (duration.getStandardMinutes() > 1) { // more than 1 minute reduce every 1 minutes
             countTime = 60000;
         } else { // below 1 minute count every second
             countTime = 1000;
         }
 
 
+
         new CountDownTimer(durationMili, countTime) {
 
             public void onTick(long millisUntilFinished) {
-
-
                 if (durationMili > 172800000) { // if  more than  2 days
                     long hour = duration.getStandardHours() % 24;
                     viewHolder.dateTask.setText(duration.getStandardDays() + " Days " + hour + " hours");
-                    viewHolder.dateTask.setTextColor(Color.parseColor("#FFFFFF"));
+                    viewHolder.dateTask.setTextColor(Color.parseColor("#424242"));
                 } else if (durationMili > 3600000) { //if more than 1 hours
                     long minute = duration.getStandardMinutes() % 60;
                     viewHolder.dateTask.setText(duration.getStandardHours() + " Hours " + minute + " minutes");
@@ -88,7 +86,8 @@ public class ListTaskAdapter extends RecyclerView.Adapter<ListTaskAdapter.ViewHo
             }
 
             public void onFinish() {
-                viewHolder.dateTask.setText("done!");
+
+                viewHolder.dateTask.setText("done");
                 viewHolder.dateTask.setTextColor(Color.parseColor("#4CAF50"));
             }
         }.start();

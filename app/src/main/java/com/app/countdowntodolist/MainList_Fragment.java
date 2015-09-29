@@ -233,7 +233,6 @@ public class MainList_Fragment extends Fragment {
             }
         });
         PullToRefresh.setRefreshing(false);
-        Log.e("test", "" + 4);
         mAdapter.notifyDataSetChanged();
 
 

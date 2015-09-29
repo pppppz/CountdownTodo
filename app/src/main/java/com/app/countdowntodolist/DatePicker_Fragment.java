@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.DatePicker;
 import android.widget.TextView;
 
+import org.joda.time.DateTime;
+
 import java.util.Calendar;
 
 public class DatePicker_Fragment extends DialogFragment
@@ -18,10 +20,17 @@ public class DatePicker_Fragment extends DialogFragment
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         // Use the current date as the default date in the picker
-        final Calendar c = Calendar.getInstance();
+   //     final Calendar c = Calendar.getInstance();
+
+        DateTime now = DateTime.now();
+        /*
         years = c.get(Calendar.YEAR);
         months = c.get(Calendar.MONTH);
-        days = c.get(Calendar.DAY_OF_MONTH);
+        days = c.get(Calendar.DAY_OF_MONTH);*/
+
+        years = now.getYear();
+        months = now.getMonthOfYear();
+        days = now.getDayOfMonth();
 
         // Create a new instance of DatePickerDialog and return it
         return new DatePickerDialog(getActivity(), this, years, months, days + 1);

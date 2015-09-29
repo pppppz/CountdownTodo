@@ -9,17 +9,16 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
-import android.widget.Toast;
 
 import com.app.countdowntodolist.Function.switchFragment;
 import com.app.countdowntodolist.Model.Task;
@@ -29,8 +28,6 @@ import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
 import org.joda.time.DateTime;
-
-import java.util.Calendar;
 
 public class AddTask_Fragment extends Fragment {
 
@@ -59,7 +56,10 @@ public class AddTask_Fragment extends Fragment {
                 t.setTitle(TaskInput.getText().toString());
                 t.setCompleted(false);
                 t.setDescription(DesInput.getText().toString());
+
+
                 DateTime date = new DateTime(year, month, day, hour, minute);
+                Log.e("from add" , date.toString());
                 t.setDeadline(date.toDate());
                 //  t.saveEventually(); // save in to parse.com
 
@@ -70,15 +70,20 @@ public class AddTask_Fragment extends Fragment {
                         InputMethodManager inputManager = (InputMethodManager) fragmentActivity.getSystemService(Context.INPUT_METHOD_SERVICE);
                         inputManager.hideSoftInputFromWindow(fragmentActivity.getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
                         dialog.dismiss();
-                        Toast.makeText(fragmentActivity, "Add task completed", Toast.LENGTH_SHORT).show();
+
 
                         //finish this class and swap to Main class
                         Fragment fragment = new MainList_Fragment();
                         FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
+                        fragmentManager.popBackStack("MainList_Fragment", FragmentManager.POP_BACK_STACK_INCLUSIVE);
                         new switchFragment(fragment, fragmentManager).doSwitch();
+
+
 
                     }
                 });
+
+
 
             }
 
@@ -102,6 +107,7 @@ public class AddTask_Fragment extends Fragment {
                     tvTimeset.setText(hour_text + ":" + min);
                     hour = hourOfDay;
                     minute = minutes;
+                    Log.e("onTimeSet ", hourOfDay + ":" + minutes);
                 }
             };
             tp.show(fragmentActivity.getFragmentManager(), "timePicker");
@@ -159,19 +165,27 @@ public class AddTask_Fragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        Calendar c = Calendar.getInstance();
-        year = c.get(Calendar.YEAR);
 
-        day = c.get(Calendar.DAY_OF_MONTH);
-        hour = c.get(Calendar.HOUR_OF_DAY);
-        month = c.get(Calendar.MONTH);
-        minute = c.get(Calendar.MINUTE);
+        DateTime dateTime = DateTime.now();
+        //Calendar c = Calendar.getInstance();
+        year = dateTime.getYear();
+
+        day = dateTime.getDayOfMonth();
+        hour = dateTime.getHourOfDay();
+        month = dateTime.getMonthOfYear();
+        minute = dateTime.getMinuteOfHour();
         day = day + 1; // for at least will set deadline tomorrow
+
 
         //set into text field
         tvDateset.setText(month + "/" + day + "/" + year);
-        tvTimeset.setText(hour + ":" + minute);
+        if (minute < 10 ){
 
+            tvTimeset.setText(hour + ":0" + minute);
+
+        }else{
+            tvTimeset.setText(hour + ":" + minute);
+        }
 
     }
 

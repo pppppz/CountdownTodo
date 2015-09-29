@@ -5,12 +5,15 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -23,13 +26,15 @@ import com.parse.ParseUser;
 
 public class MainActivity extends AppCompatActivity {
 
+    TabLayout tabLayout;
     Toolbar toolbar;
     CollapsingToolbarLayout collapsingToolbarLayout;
-
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
-
     CoordinatorLayout rootLayout;
+    ViewPager viewPager;
+    FragmentManager fragmentManager;
+
 
     @Override
     public void onResume() {
@@ -42,38 +47,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        fragmentManager = getSupportFragmentManager();
         parseLogIn();
         initToolbar();
         initInstances();
-
-
-        setFirstState(savedInstanceState);
-    }
-
-    private void setFirstState(Bundle state) {
-        // if instance state is null choose first nav item (position = 0) for display
-        if (state == null) {
-            displayView(0);
-        }
-    }
-
-    private void displayView(int position) {
-        // update the main content by replacing fragments
-        Fragment fragment;
-        switch (position) {
-            case 0:
-                fragment = new MainList_Fragment();
-                break;
-
-            default:
-                fragment = new MainList_Fragment();
-                break;
-        }
-
-        //create fragment manager for manage to switching fragment
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        new switchFragment(fragment, fragmentManager).doSwitch();
-
     }
 
 
@@ -86,16 +63,35 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         drawerToggle = new ActionBarDrawerToggle(MainActivity.this, drawerLayout, R.string.hello_world, R.string.hello_world);
         drawerLayout.setDrawerListener(drawerToggle);
-
-
-        assert getSupportActionBar() != null;
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
-
-
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
+
+        //set tab
+        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.schedule48));
+        tabLayout.addTab(tabLayout.newTab().setText("location"));
+        tabLayout.addTab(tabLayout.newTab().setText("mainlist"));
+
+        viewPager = (ViewPager) findViewById(R.id.pager);
+        PagerAdapter adapter = new PagerAdapter(fragmentManager, tabLayout.getTabCount());
+        viewPager.setAdapter(adapter);
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
 
     }
 
@@ -120,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-/*        if (drawerToggle.onOptionsItemSelected(item))
+        if (drawerToggle.onOptionsItemSelected(item))
             return true;
 
         // Handle action bar item clicks here. The action bar will
@@ -132,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-*/
+
         return super.onOptionsItemSelected(item);
     }
 
