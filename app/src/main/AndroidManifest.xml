@@ -7,16 +7,22 @@
 
 
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme.WithoutActionBar"
+
         >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
 
         <activity
             android:name=".LoginActivity"
             android:label="Log in" >
         </activity>
+
 
         <activity
             android:name=".RegisterActivity"
@@ -34,6 +40,16 @@
             android:label="Settings" >
         </activity>
 
+        <activity
+            android:name=".FacebookLoginActivity"
+            android:label="Facebook Login" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
         <!-- splash screen first page -->
         <activity
             android:name=".MainSplashScreen"
@@ -43,7 +59,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
 
         <meta-data

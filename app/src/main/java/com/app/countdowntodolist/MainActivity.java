@@ -6,20 +6,18 @@ import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.app.countdowntodolist.Function.switchFragment;
+import com.app.countdowntodolist.Adapter.PagerAdapter;
 import com.app.countdowntodolist.Model.Task;
-import com.parse.Parse;
+import com.facebook.appevents.AppEventsLogger;
 import com.parse.ParseAnalytics;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
@@ -40,6 +38,15 @@ public class MainActivity extends AppCompatActivity {
     public void onResume() {
         super.onResume();
         collapsingToolbarLayout.setTitle("Countdown 365");
+        AppEventsLogger.activateApp(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        // Logs 'app deactivate' App Event.
+        AppEventsLogger.deactivateApp(this);
     }
 
 
@@ -69,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
         //set tab
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.schedule48));
-        tabLayout.addTab(tabLayout.newTab().setText("location"));
-        tabLayout.addTab(tabLayout.newTab().setText("mainlist"));
+        tabLayout.addTab(tabLayout.newTab().setText("none"));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.menu48));
 
         viewPager = (ViewPager) findViewById(R.id.pager);
         PagerAdapter adapter = new PagerAdapter(fragmentManager, tabLayout.getTabCount());
@@ -109,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+        // Inflate the menu_48; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
@@ -124,23 +131,20 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        } else if (id == R.id.action_logout) {
+            ParseUser.logOut();
+            // show login screen
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+            finish();
         }
 
         return super.onOptionsItemSelected(item);
     }
 
     private void parseLogIn() {
-
-        // start initial parse with key
-        Parse.initialize(this, "SIzGKpVr1ITnt629TkiQZfxSQE6VA2HddvwbdJQ4", "36WLOG5LBo0AcmIivQRdqUoHbdF1MNJj56zUNyoq");
-        //parse analytic is track
-        ParseAnalytics.trackAppOpenedInBackground(getIntent());
-
-        //register class use in project such as this project use table Car in parse also register subclass Car (in Project)
-        ParseObject.registerSubclass(Task.class);
 
         // get user data if null go to login
         ParseUser currentUser = ParseUser.getCurrentUser();
@@ -149,5 +153,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+
+        //parse analytic is track
+        ParseAnalytics.trackAppOpenedInBackground(getIntent());
+        //register class use in project such as this project use table Car in parse also register subclass Car (in Project)
+        ParseObject.registerSubclass(Task.class);
+
+
     }
 }

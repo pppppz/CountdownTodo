@@ -5,20 +5,17 @@ import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 
-public class MainSplashScreen extends ActionBarActivity {
+public class MainSplashScreen extends AppCompatActivity {
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.app.countdowntodolist.R.layout.main_splash_screen);
-//        getSupportActionBar().hide();
-
-// METHOD 1
+        setContentView(R.layout.main_splash_screen);
 
         /****** Create Thread that will sleep for 5 seconds *************/
         Thread background = new Thread() {
@@ -26,7 +23,7 @@ public class MainSplashScreen extends ActionBarActivity {
 
                 try {
                     // Thread will sleep for 5 seconds
-                    // sleep(1000); //set at 1 sec
+                    sleep(1000); //set at 1 sec
 
                     // After 5 seconds redirect to another intent
                     Intent i = new Intent(getBaseContext(), MainActivity.class);

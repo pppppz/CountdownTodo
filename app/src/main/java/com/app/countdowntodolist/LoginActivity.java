@@ -10,17 +10,29 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.facebook.login.widget.LoginButton;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 
 public class LoginActivity extends Activity {
 
+    LoginButton.OnClickListener LoginOnClick = new LoginButton.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            Intent intent = new Intent(LoginActivity.this, FacebookLoginActivity.class);
+            startActivity(intent);
+            finish();
+
+        }
+    };
     private EditText UsernameField;
     private EditText PasswordField;
     private TextView ErrorField;
     private String Username;
     private String Password;
+    private LoginButton mBtnFb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +46,8 @@ public class LoginActivity extends Activity {
         UsernameField = (EditText) findViewById(R.id.login_username);
         PasswordField = (EditText) findViewById(R.id.login_password);
         ErrorField = (TextView) findViewById(R.id.error_messages);
+        mBtnFb = (LoginButton) findViewById(R.id.btn_fb_login);
+        mBtnFb.setOnClickListener(LoginOnClick);
 
     }
 
@@ -44,7 +58,6 @@ public class LoginActivity extends Activity {
 
     }
 
-
     //click register button for go to intent register page
      public void toRegistration(View v) {
         Intent intent = new Intent(this, RegisterActivity.class);
@@ -52,10 +65,10 @@ public class LoginActivity extends Activity {
         finish();
     }
 
-    //insert menu
+    //insert menu_48
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+        // Inflate the menu_48; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.login, menu);
         return true;
     }
@@ -134,8 +147,6 @@ public class LoginActivity extends Activity {
 
         }
     }
-
-
 
 
 }

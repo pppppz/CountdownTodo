@@ -12,4 +12,8 @@
     <color name="orange">#FF9900</color>
     <color name="green">#009900</color>
     <color name="blue">#000099</color>
+
+    <color name="primary">#00BCD4</color>
+    <color name="primaryDark">#0097A7</color>
+    <color name="accent">#FF9100</color>
 </resources>

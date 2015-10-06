@@ -50,6 +50,7 @@ public class MainList_Fragment extends Fragment {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private List<Task> mData = new ArrayList<>();
+
     RecyclerView.OnItemTouchListener recycleViewOnTouchListener = new RecyclerItemClickListener(fragmentActivity, new RecyclerItemClickListener.OnItemClickListener() {
         @Override
         public void onItemClick(View view, final int position) {
@@ -210,13 +211,11 @@ public class MainList_Fragment extends Fragment {
 
     public void updateData() {
 
-
-        Log.e(MainList_Fragment.class.getName(), "update data start");
         //pattern query
-        final ParseQuery<Task> query = ParseQuery.getQuery(Task.class);
+        ParseQuery<Task> query = ParseQuery.getQuery(Task.class);
         query.whereEqualTo("user", ParseUser.getCurrentUser());
         query.addDescendingOrder("createdAt");
-        query.setCachePolicy(ParseQuery.CachePolicy.CACHE_THEN_NETWORK);
+        //  query.setCachePolicy(ParseQuery.CachePolicy.CACHE_THEN_NETWORK);
 
         query.findInBackground(new FindCallback<Task>() {
             @Override
