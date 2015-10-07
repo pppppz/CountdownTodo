@@ -7,7 +7,6 @@ import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 public class Location_Fragment extends Fragment {
 
@@ -20,8 +19,6 @@ public class Location_Fragment extends Fragment {
 
         view = inflater.inflate(R.layout.fragment_location, container, false);
         fragmentActivity = getActivity();
-
-
         return view;
     }
 

@@ -6,266 +6,28 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="ptest" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d36f65a-224f-4324-958b-b824d8c680fa" name="Default" comment="Could sign up &amp; get user profile from facebook but still can't save data into parse because ParseException had showed &quot;Password cannot be missing or blank&quot;&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/menu48.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivityBackup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MyApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/PPNS_1_10_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ParseCrashReporting_1_10_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ParseFacebookUtilsV4_1_10_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ParseTwitterUtils_1_10_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Parse_1_10_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Model/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_layout_facebook.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/bolts_android_1_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/cardview_v7_23_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/circleimageview_2_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/facebook_android_sdk_4_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/main.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_analytics_8_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appinvite_8_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_identity_8_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_location_8_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_measurement_8_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_panorama_8_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_safetynet_8_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_wearable_8_1_0.xml" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\1_bolts_android_1_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\Parse_1_9_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\achartengine_1_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\bolts_android_1_2_0_javadoc.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_base_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_gcm_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_plus_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_wallet_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_wearable_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\allclasses-noframe.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ConfigCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\CountCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\DeleteCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\FindCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\FunctionCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\GetCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\GetDataCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\LocationCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\LogInCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\LogOutCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\Parse.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseACL.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseAnalytics.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseAnonymousUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseClassName.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseCloud.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseConfig.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseException.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseFile.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseGeoPoint.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseImageView.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseInstallation.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseObject.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParsePush.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParsePushBroadcastReceiver.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseQuery.CachePolicy.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseQuery.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseQueryAdapter.OnQueryLoadListener.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseQueryAdapter.QueryFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseQueryAdapter.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseRelation.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseRole.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseSession.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseTwitterUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ParseUser.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\ProgressCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\PushService.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\RefreshCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\RequestPasswordResetCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\SaveCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\SendCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\SignUpCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ConfigCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\CountCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\DeleteCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\FindCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\FunctionCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\GetCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\GetDataCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\LocationCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\LogInCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\LogOutCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\Parse.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseACL.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseAnalytics.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseAnonymousUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseClassName.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseCloud.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseConfig.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseException.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseFile.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseGeoPoint.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseImageView.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseInstallation.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseObject.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParsePush.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParsePushBroadcastReceiver.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseQuery.CachePolicy.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseQuery.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseQueryAdapter.OnQueryLoadListener.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseQueryAdapter.QueryFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseQueryAdapter.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseRelation.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseRole.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseSession.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseTwitterUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ParseUser.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\ProgressCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\PushService.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\RefreshCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\RequestPasswordResetCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\SaveCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\SendCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\class-use\SignUpCallback.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\com\parse\package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\constant-values.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\deprecated-list.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\help-doc.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\index-all.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\overview-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\package-list" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\resources\background.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\resources\tab.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\resources\titlebar.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\resources\titlebar_end.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\serialized-form.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1-javadoc\stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\Parse-1.9.1.jar.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\allclasses-noframe.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\com\parse\ParseCrashReporting.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\com\parse\class-use\ParseCrashReporting.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\com\parse\package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\com\parse\package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\com\parse\package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\com\parse\package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\constant-values.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\deprecated-list.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\help-doc.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\index-all.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\overview-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\package-list" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\resources\background.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\resources\tab.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\resources\titlebar.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\resources\titlebar_end.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1-javadoc\stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseCrashReporting-1.9.1.jar.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\allclasses-noframe.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\com\parse\ParseFacebookUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\com\parse\class-use\ParseFacebookUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\com\parse\package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\com\parse\package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\com\parse\package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\com\parse\package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\constant-values.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\deprecated-list.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\help-doc.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\index-all.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\overview-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\package-list" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\resources\background.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\resources\tab.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\resources\titlebar.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\resources\titlebar_end.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1-javadoc\stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV3-1.9.1.jar.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\allclasses-noframe.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\com\parse\ParseFacebookUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\com\parse\class-use\ParseFacebookUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\com\parse\package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\com\parse\package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\com\parse\package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\com\parse\package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\constant-values.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\deprecated-list.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\help-doc.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\index-all.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\overview-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\package-list" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\resources\background.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\resources\tab.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\resources\titlebar.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\resources\titlebar_end.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1-javadoc\stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\ParseFacebookUtilsV4-1.9.1.jar.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\bolts-android-1.2.0-javadoc.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\bolts-android-1.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\bolts-android-1.2.0.jar.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\Parse-1.9.1\third_party_licenses.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\libs\achartengine-1.1.0.jar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/ParseLoginSampleBasic.iml" />
+      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\bolts_android_1_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\src\main\java\com\app\countdowntodolist\FacebookLoginActivityBackup.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Location_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Location_Fragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainList_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainList_Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainSplashScreen.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainSplashScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/RegisterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/RegisterActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MyApp.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MyApp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/color.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/color.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/design_23_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_23_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/mediarouter_v7_22_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mediarouter_v7_22_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/multidex_1_0_1.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_ads_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appindexing_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_analytics_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_cast_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_appindexing_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_nearby_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_appinvite_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_maps_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_appstate_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_gcm_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_cast_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_plus_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_drive_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_drive_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_fitness_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_fitness_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_games_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_games_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_identity_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appstate_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_location_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_ads_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_maps_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_nearby_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_vision_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_panorama_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_basement_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_safetynet_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_base_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\.idea\libraries\play_services_vision_7_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_wallet_8_1_0.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\app\src\main\java\com\app\countdowntodolist\PagerAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Adapter/PagerAdapter.java" />
     </list>
     <ignored path="CountdownTodo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -293,59 +55,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FacebookLoginActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FacebookLoginActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33222592">
-              <caret line="235" column="10" selection-start-line="235" selection-start-column="10" selection-end-line="235" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3343#4410#0" expanded="true" />
-                <element signature="e#4409#4410#0" expanded="true" />
-                <element signature="e#5652#6415#0" expanded="true" />
-                <element signature="e#6414#6415#0" expanded="true" />
-                <element signature="e#6596#8095#0" expanded="true" />
-                <element signature="e#8094#8095#0" expanded="true" />
+                <element signature="e#4854#5067#0" expanded="true" />
+                <element signature="e#5066#5067#0" expanded="true" />
+                <element signature="e#6383#7391#0" expanded="true" />
+                <element signature="e#7390#7391#0" expanded="true" />
+                <element signature="e#8464#8465#0" expanded="true" />
+                <element signature="e#8510#8511#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FacebookLoginActivityBackup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivityBackup.java">
+      <file leaf-file-name="Location_Fragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Location_Fragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="207" column="8" selection-start-line="207" selection-start-column="8" selection-end-line="207" selection-end-column="8" />
+              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <file leaf-file-name="User_Fragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <file leaf-file-name="MyApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MyApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+              <caret line="20" column="119" selection-start-line="20" selection-start-column="119" selection-end-line="20" selection-end-column="119" />
               <folding />
             </state>
           </provider>
@@ -355,29 +106,41 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/login.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <caret line="69" column="71" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.51968503">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding>
+                <element signature="e#446#464#0" expanded="true" />
+                <element signature="e#994#1012#0" expanded="true" />
+                <element signature="e#1472#1490#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddTask_Fragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/AddTask_Fragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+              <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditTaskFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/EditTaskFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -388,8 +151,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile_vertical" />
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
@@ -1797,7 +1560,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="D:\GitHub\CountdownTodo" value="4331380232120" />
+        <entry key="D:\GitHub\CountdownTodo" value="4332494679963" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1891,6 +1654,184 @@
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/ParseLoginSampleBasic">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.3.0/gradle-1.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.3.0/gradle-1.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/1.3.0/gradle-core-1.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/1.3.0/gradle-core-1.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.3.0/builder-1.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.3.0/builder-1.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/24.3.0/lint-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/24.3.0/lint-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.2.1/proguard-gradle-5.2.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.2.1/proguard-gradle-5.2.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/24.3.0/sdk-common-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/24.3.0/sdk-common-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/24.3.0/common-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/24.3.0/common-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.3.0/builder-model-1.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.3.0/builder-model-1.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jill/jill-api/0.9.0/jill-api-0.9.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jill/jill-api/0.9.0/jill-api-0.9.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/24.3.0/ddmlib-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/24.3.0/ddmlib-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/24.3.0/sdklib-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/24.3.0/sdklib-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/24.3.0/manifest-merger-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/24.3.0/manifest-merger-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jack/jack-api/0.9.0/jack-api-0.9.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jack/jack-api/0.9.0/jack-api-0.9.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/1.3.0/builder-test-api-1.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/1.3.0/builder-test-api-1.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/24.3.0/lint-checks-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/24.3.0/lint-checks-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.2.1/proguard-base-5.2.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.2.1/proguard-base-5.2.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/24.3.0/annotations-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/24.3.0/annotations-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/24.3.0/dvlib-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/24.3.0/dvlib-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/24.3.0/layoutlib-api-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/24.3.0/layoutlib-api-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/24.3.0/lint-api-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/24.3.0/lint-api-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/ParseLoginSampleBasic" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/ParseUI-Login">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.3.0/gradle-1.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.3.0/gradle-1.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/1.3.0/gradle-core-1.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/1.3.0/gradle-core-1.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.3.0/builder-1.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.3.0/builder-1.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/24.3.0/lint-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/24.3.0/lint-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.2.1/proguard-gradle-5.2.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.2.1/proguard-gradle-5.2.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/24.3.0/sdk-common-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/24.3.0/sdk-common-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/24.3.0/common-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/24.3.0/common-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.3.0/builder-model-1.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.3.0/builder-model-1.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jill/jill-api/0.9.0/jill-api-0.9.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jill/jill-api/0.9.0/jill-api-0.9.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/24.3.0/ddmlib-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/24.3.0/ddmlib-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/24.3.0/sdklib-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/24.3.0/sdklib-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/24.3.0/manifest-merger-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/24.3.0/manifest-merger-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jack/jack-api/0.9.0/jack-api-0.9.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jack/jack-api/0.9.0/jack-api-0.9.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/1.3.0/builder-test-api-1.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/1.3.0/builder-test-api-1.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/24.3.0/lint-checks-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/24.3.0/lint-checks-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.2.1/proguard-base-5.2.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.2.1/proguard-base-5.2.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/24.3.0/annotations-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/24.3.0/annotations-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/24.3.0/dvlib-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/24.3.0/dvlib-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/24.3.0/layoutlib-api-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/24.3.0/layoutlib-api-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/24.3.0/lint-api-24.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/24.3.0/lint-api-24.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
+                            <option value="D:/sdk/extras/android/m2repository/com/android/support/support-v4/22.0.0/support-v4-22.0.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.parse/parse-android/1.10.1/a87cb993a12e574a216213d0b8b2b78f6da35d37/parse-android-1.10.1.jar" />
+                            <option value="D:/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.1/44780c2cf98f6a3cf4e77f1234d644758b329201/bolts-android-1.2.1.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/ParseUI-Login" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -2145,7 +2086,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/preferences.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/SettingsActivity.java" />
@@ -2154,35 +2094,48 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/TimePicker_Fragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/AddTask_Fragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Lcation_Fragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Location_Fragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_location.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Function/switchFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/PagerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/color.xml" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
         <option value="$PROJECT_DIR$/app/app.iml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/user_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_layout_facebook.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Application.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Model/User.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Adapter/PagerAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainList_Fragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java" />
         <option value="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MyApp.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainSplashScreen.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivityBackup.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/ui/ParseLoginBuilder.java" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/parse/ParseLoginBuilder.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/color.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/SampleProfileActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/parse/ParseLoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainSplashScreen.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/parse/ParseLoginFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/parse/ParseLoginHelpFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/parse/ParseLoginDispatchActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/parse/ParseSignupFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/SampleDispatchActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MyApp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Location_Fragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/user_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivity.java" />
       </list>
     </option>
@@ -2198,9 +2151,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
+    <option name="x" value="55" />
     <option name="y" value="-8" />
-    <option name="width" value="1874" />
+    <option name="width" value="1873" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -2227,26 +2180,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CountdownTodo" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CountdownTodo" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2289,14 +2223,159 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CountdownTodo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CountdownTodo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CountdownTodo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CountdownTodo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CountdownTodo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CountdownTodo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="countdowntodolist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CountdownTodo" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CountdownTodo" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CountdownTodo" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="countdowntodolist" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CountdownTodo" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2310,7 +2389,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/libs/Parse-1.10.2.jar" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -2338,17 +2417,19 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.app.countdowntodolist.Model" />
       <recent name="com.app.countdowntodolist" />
+      <recent name="com.app.countdowntodolist.Model" />
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHub\CountdownTodo\app\src\main\res\drawable-xhdpi" />
       <recent name="D:\GitHub\CountdownTodo\app\src\main\res\layout" />
-      <recent name="D:\GitHub\CountdownTodo\app\src\main\res\values" />
+      <recent name="D:\GitHub\CountdownTodo\app\src\main\res\drawable-mdpi" />
       <recent name="D:\GitHub\CountdownTodo\app\src\main\res" />
+      <recent name="D:\GitHub\CountdownTodo\app\src\androidTest\java" />
+      <recent name="D:\GitHub\CountdownTodo\app\src\main\res\drawable-xhdpi" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="parse" />
       <recent name="com.app.countdowntodolist" />
     </key>
   </component>
@@ -2549,8 +2630,40 @@
       <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="ParseLoginSampleBasic" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="ParseLoginSampleBasic" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Android Application.app" />
+      <item index="1" class="java.lang.String" itemvalue="Android Application.ParseLoginSampleBasic" />
     </list>
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
@@ -2582,7 +2695,13 @@
       <option name="project" value="LOCAL" />
       <updated>1441695993070</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Could sign up &amp; get user profile from facebook but still can't save data into parse because ParseException had showed &quot;Password cannot be missing or blank&quot;&#10;">
+      <created>1444141649552</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1444141649552</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2595,35 +2714,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="55" y="-8" width="1873" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3567625" sideWeight="0.4950386" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43556976" sideWeight="0.5970231" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42917997" sideWeight="0.57804745" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.399361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42917997" sideWeight="0.42195258" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290735" sideWeight="0.58324146" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.49558985" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4685836" sideWeight="0.5237045" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290735" sideWeight="0.41675854" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3312034" sideWeight="0.37120795" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.4911797" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24972437" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30154356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20683949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34930778" sideWeight="0.477398" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.49779493" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.4958632" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19420783" sideWeight="0.45385778" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2660,18 +2779,59 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Location_Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/user_fragment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <element signature="e#398#438#0" expanded="true" />
+            <element signature="e#609#644#0" expanded="true" />
+            <element signature="e#869#904#0" expanded="true" />
+            <element signature="e#930#948#0" expanded="true" />
+            <element signature="e#1138#1173#0" expanded="true" />
+            <element signature="e#1208#1243#0" expanded="true" />
+            <element signature="e#1279#1314#0" expanded="true" />
+            <element signature="e#1540#1575#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3343#4410#0" expanded="true" />
-            <element signature="e#4409#4410#0" expanded="true" />
-            <element signature="e#5652#6415#0" expanded="true" />
-            <element signature="e#6414#6415#0" expanded="true" />
-            <element signature="e#6596#8095#0" expanded="true" />
-            <element signature="e#8094#8095#0" expanded="true" />
+            <element signature="e#1914#1954#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2679,190 +2839,77 @@
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3343#4410#0" expanded="true" />
-            <element signature="e#4409#4410#0" expanded="true" />
-            <element signature="e#5652#6415#0" expanded="true" />
-            <element signature="e#6414#6415#0" expanded="true" />
-            <element signature="e#6596#8095#0" expanded="true" />
-            <element signature="e#8094#8095#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3343#4410#0" expanded="true" />
-            <element signature="e#4409#4410#0" expanded="true" />
-            <element signature="e#5652#6415#0" expanded="true" />
-            <element signature="e#6414#6415#0" expanded="true" />
-            <element signature="e#6596#8095#0" expanded="true" />
-            <element signature="e#8094#8095#0" expanded="true" />
-          </folding>
+          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="22" />
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="254" column="11" selection-start-line="254" selection-start-column="11" selection-end-line="254" selection-end-column="11" />
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MyApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="20" column="119" selection-start-line="20" selection-start-column="119" selection-end-line="20" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="70" selection-start-line="58" selection-start-column="58" selection-end-line="58" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/user_fragment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+          <folding>
+            <element signature="e#398#438#0" expanded="true" />
+            <element signature="e#609#644#0" expanded="true" />
+            <element signature="e#869#904#0" expanded="true" />
+            <element signature="e#930#948#0" expanded="true" />
+            <element signature="e#1138#1173#0" expanded="true" />
+            <element signature="e#1208#1243#0" expanded="true" />
+            <element signature="e#1279#1314#0" expanded="true" />
+            <element signature="e#1540#1575#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3343#4410#0" expanded="true" />
-            <element signature="e#4409#4410#0" expanded="true" />
-            <element signature="e#5652#6415#0" expanded="true" />
-            <element signature="e#6414#6415#0" expanded="true" />
-            <element signature="e#6596#8095#0" expanded="true" />
-            <element signature="e#8094#8095#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/sdk/sources/android-23/com/android/documentsui/DirectoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40199336">
-          <caret line="171" column="39" selection-start-line="171" selection-start-column="39" selection-end-line="171" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0226088">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/TimePicker_Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0730897">
-          <caret line="45" column="62" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.717608">
-          <caret line="149" column="88" selection-start-line="149" selection-start-column="88" selection-end-line="149" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0454545">
-          <caret line="254" column="11" selection-start-line="254" selection-start-column="11" selection-end-line="254" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/user_fragment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2245681">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Listener/RecyclerItemClickListener.java">
@@ -2879,21 +2926,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Location_Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_layout_facebook.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Adapter/PagerAdapter.java">
@@ -2924,27 +2964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/AddTask_Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.29724">
-          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainList_Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="216" column="46" selection-start-line="214" selection-start-column="6" selection-end-line="216" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.84076434">
@@ -2956,7 +2975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2964,15 +2982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40305343">
           <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="80" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2980,7 +2989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2988,7 +2996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2999,10 +3006,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3306288">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainSplashScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5714285">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="72" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v11/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.037037">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="73" selection-start-line="19" selection-start-column="0" selection-end-line="34" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.666666">
+          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainList_Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="226" column="48" selection-start-line="226" selection-start-column="48" selection-end-line="226" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0869565">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -3015,25 +3078,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48303393">
+        <state vertical-scroll-proportion="0.47826087">
           <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MyApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48207173">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="33" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -3041,46 +3094,133 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/mainlist_fragment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7824268">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="e#304#344#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/user_fragment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1482254">
+          <caret line="82" column="49" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+          <folding>
+            <element signature="e#398#438#0" expanded="true" />
+            <element signature="e#609#644#0" expanded="true" />
+            <element signature="e#869#904#0" expanded="true" />
+            <element signature="e#930#948#0" expanded="true" />
+            <element signature="e#1138#1173#0" expanded="true" />
+            <element signature="e#1208#1243#0" expanded="true" />
+            <element signature="e#1279#1314#0" expanded="true" />
+            <element signature="e#1540#1575#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7453027">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding>
+            <element signature="e#1914#1954#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="71" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/AddTask_Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/EditTaskFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivityBackup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="207" column="8" selection-start-line="207" selection-start-column="8" selection-end-line="207" selection-end-column="8" />
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/FacebookLoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33222592">
-          <caret line="235" column="10" selection-start-line="235" selection-start-column="10" selection-end-line="235" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3343#4410#0" expanded="true" />
-            <element signature="e#4409#4410#0" expanded="true" />
-            <element signature="e#5652#6415#0" expanded="true" />
-            <element signature="e#6414#6415#0" expanded="true" />
-            <element signature="e#6596#8095#0" expanded="true" />
-            <element signature="e#8094#8095#0" expanded="true" />
+            <element signature="e#4854#5067#0" expanded="true" />
+            <element signature="e#5066#5067#0" expanded="true" />
+            <element signature="e#6383#7391#0" expanded="true" />
+            <element signature="e#7390#7391#0" expanded="true" />
+            <element signature="e#8464#8465#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Location_Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MyApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="119" selection-start-line="20" selection-start-column="119" selection-end-line="20" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51968503">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="e#446#464#0" expanded="true" />
+            <element signature="e#994#1012#0" expanded="true" />
+            <element signature="e#1472#1490#0" expanded="true" />
           </folding>
         </state>
       </provider>

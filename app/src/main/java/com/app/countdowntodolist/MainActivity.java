@@ -3,7 +3,6 @@ package com.app.countdowntodolist;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
@@ -26,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
 
     TabLayout tabLayout;
     Toolbar toolbar;
-    CollapsingToolbarLayout collapsingToolbarLayout;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
     CoordinatorLayout rootLayout;
@@ -37,14 +35,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onResume() {
         super.onResume();
-        collapsingToolbarLayout.setTitle("Countdown 365");
         AppEventsLogger.activateApp(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-
         // Logs 'app deactivate' App Event.
         AppEventsLogger.deactivateApp(this);
     }
@@ -71,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
         drawerToggle = new ActionBarDrawerToggle(MainActivity.this, drawerLayout, R.string.hello_world, R.string.hello_world);
         drawerLayout.setDrawerListener(drawerToggle);
         rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
-        collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
 
         //set tab
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);

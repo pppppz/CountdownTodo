@@ -25,7 +25,7 @@ import com.parse.ParseException;
 import com.parse.ParseFacebookUtils;
 import com.parse.ParseFile;
 import com.parse.ParseUser;
-import com.parse.SignUpCallback;
+import com.parse.SaveCallback;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,23 +38,14 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class FacebookLoginActivity extends AppCompatActivity {
 
-    public static final List<String> mPermissions = new ArrayList<String>() {{
-        add("public_profile");
-        add("email");
-    }};
-    public Bitmap bitmap;
     public Bitmap profilePic;
     Profile fbProfile;
     ParseUser parseUser;
     String name, email, firstName, lastName, user_id;
-    Object profilePicObj;
-    // public static final List<String> mPermissions  = Arrays.asList("publish_actions");
 
     public static Bitmap DownloadImageBitmap(String url) {
         Bitmap bm = null;
@@ -127,7 +118,34 @@ public class FacebookLoginActivity extends AppCompatActivity {
 
     }
 
-    private void saveNewUser(String name, String firstName, String lastName, String user_id, String email, Object profilePicObj) {
+    private void saveProfilePicNewUser(Bitmap bitmap) {
+
+        parseUser = ParseUser.getCurrentUser();
+
+//        Saving profile photo as a ParseFile
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 70, stream);
+        byte[] data = stream.toByteArray();
+        String thumbName = parseUser.getUsername().replaceAll("\\s+", "");
+        final ParseFile parseFile = new ParseFile(thumbName + "_thumb.jpg", data);
+        parseFile.saveInBackground(new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                parseUser.put("profileThumb", parseFile);
+                //Finally save all the user details
+                parseUser.saveInBackground(new SaveCallback() {
+                    @Override
+                    public void done(ParseException e) {
+                        Log.d("ptest", "profileThumb has saved");
+                    }
+                });
+            }
+        });
+
+
+    }
+
+    private void saveNewUser(String name, String firstName, String lastName, String user_id, String email) {
         parseUser = ParseUser.getCurrentUser();
         parseUser.setUsername(name);
         parseUser.setEmail(email);
@@ -135,33 +153,14 @@ public class FacebookLoginActivity extends AppCompatActivity {
         parseUser.put("last_name", lastName);
         parseUser.put("user_id", user_id);
 
-        /* because facebook don't give permission of password. this line will set password by default
-        for every user who signup with this application.
-         */
-        //  parseUser.put("password", "examplefacebookpassword");
-
-
-//        Saving profile photo as a ParseFile
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-
-        //  Bitmap bitmap = ((BitmapDrawable) mProfileImage.getDrawable()).getBitmap();
-        //   Bitmap bitmap = ((BitmapDrawable) mProfileImage.getDrawable()).getBitmap();
-        //   bitmap.compress(Bitmap.CompressFormat.JPEG, 70, stream);
-        byte[] data = stream.toByteArray();
-        String thumbName = parseUser.getUsername().replaceAll("\\s+", "");
-        final ParseFile parseFile = new ParseFile(thumbName + "_thumb.jpg", data);
-
-        parseUser.signUpInBackground(new SignUpCallback() {
+        parseUser.saveInBackground(new SaveCallback() {
             @Override
             public void done(ParseException e) {
                 if (e == null) {
                     // Hooray! Let them use the app now.
-
-                    //    parseUser.put("profileThumb", parseFile);
-
                     //Finally save all the user details
                     Toast.makeText(FacebookLoginActivity.this, "New user:" + FacebookLoginActivity.this.name + " Signed up", Toast.LENGTH_SHORT).show();
-                    Log.d("ptest", "Hooray!");
+                    Log.d("ptest", "Hooray! new user had created");
                 } else {
                     // Sign up didn't succeed. Look at the ParseException
                     // to figure out what went wrong
@@ -175,35 +174,22 @@ public class FacebookLoginActivity extends AppCompatActivity {
     public void getUserDetailsFromFB() {
 
 
-        GraphRequest request = GraphRequest.newMeRequest(
-                AccessToken.getCurrentAccessToken(),
+        GraphRequest request = GraphRequest.newMeRequest(AccessToken.getCurrentAccessToken(),
                 new GraphRequest.GraphJSONObjectCallback() {
                     @Override
                     public void onCompleted(JSONObject object, GraphResponse response) {
                         // Insert your code here
-
-
                         try {
                             email = object.getString("email");
-                            Log.d("ptest", email);
                             name = response.getJSONObject().getString("name");
-                            Log.d("ptest", name);
                             firstName = response.getJSONObject().getString("first_name");
-                            Log.d("ptest", firstName);
                             lastName = response.getJSONObject().getString("last_name");
-                            Log.d("ptest", lastName);
                             user_id = response.getJSONObject().getString("id");
-                            Log.d("ptest", user_id);
-
-                            profilePicObj = response.getJSONObject().getJSONObject("picture");
-                            //  profilePic = BitmapFactory.decodeFile(response.getJSONObject().get("picture"));
-                            saveNewUser(name, firstName, lastName, user_id, email, profilePicObj);
-                            Log.d("ptest ", name + "," + firstName + "," + lastName + "," + user_id + "," + email);
-
+                            saveNewUser(name, firstName, lastName, user_id, email);
+                            Log.d("ptest", name + "," + firstName + "," + lastName + "," + user_id + "," + email);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-
                     }
                 });
 
@@ -212,10 +198,9 @@ public class FacebookLoginActivity extends AppCompatActivity {
         request.setParameters(parameters);
         request.executeAsync();
 
+
         ProfilePhotoAsync profilePhotoAsync = new ProfilePhotoAsync(fbProfile);
         profilePhotoAsync.execute();
-
-
     }
 
     @Override
@@ -233,11 +218,6 @@ public class FacebookLoginActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-     /*   if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);*/
-
         return id == R.id.action_settings || super.onOptionsItemSelected(item);
     }
 
@@ -247,21 +227,20 @@ public class FacebookLoginActivity extends AppCompatActivity {
 
         public ProfilePhotoAsync(Profile profile) {
             this.profile = profile;
-            Log.d("ptest ", "profilephotoasync");
         }
 
         @Override
         protected Bitmap doInBackground(String... params) {
             // Fetching data from URI and storing in bitmap
             Log.d("ptest ", "download photo");
-            return bitmap = DownloadImageBitmap(profile.getProfilePictureUri(200, 200).toString());
+            return profilePic = DownloadImageBitmap(profile.getProfilePictureUri(200, 200).toString());
 
         }
 
         @Override
         protected void onPostExecute(Bitmap s) {
             super.onPostExecute(s);
-            //   mProfileImage.setImageBitmap(bitmap);
+            saveProfilePicNewUser(s);
         }
 
     }

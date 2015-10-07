@@ -23,7 +23,6 @@ public class User_Fragment extends Fragment {
     TextView mUsername, mEmailID;
     ParseUser parseUser;
     private View view;
-    private TextView tvDateset, tvTimeset;
     private FragmentActivity fragmentActivity;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,7 +35,6 @@ public class User_Fragment extends Fragment {
 
         mUsername = (TextView) view.findViewById(R.id.txt_name);
         mEmailID = (TextView) view.findViewById(R.id.txt_email);
-        tvDateset = (TextView) view.findViewById(R.id.tvDateSet);
 
         return view;
     }
@@ -63,11 +61,7 @@ public class User_Fragment extends Fragment {
             e.printStackTrace();
         }
 
-
         mEmailID.setText(parseUser.getEmail());
-        mEmailID.setText(parseUser.getEmail());
-
-
         mUsername.setText(parseUser.getUsername());
 
         Toast.makeText(fragmentActivity, "Welcome back " + mUsername.getText().toString(), Toast.LENGTH_SHORT).show();

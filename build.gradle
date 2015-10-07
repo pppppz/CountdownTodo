@@ -18,13 +18,3 @@ allprojects {
         mavenCentral()
     }
 }
-/*
-ext {
-
-    facebookSDK = 'com.facebook.android:facebook-android-sdk:4.6.0'
-    androidSupport = 'com.android.support:support-v4:23.0.1'
-    bolts = 'com.parse.bolts:bolts-android:1.2.1'
-    parsePath = "$rootProject.projectDir/app/libs/Parse-1.10.2.jar"
-    parseFacebookUtilsPath = "$rootProject.projectDir/app/libs/ParseFacebookUtilsV4-1.10.2.jar"
-
-}*/
