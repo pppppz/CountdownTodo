@@ -7,17 +7,17 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.facebook.login.widget.LoginButton;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 
 public class LoginActivity extends Activity {
 
-    LoginButton.OnClickListener LoginOnClick = new LoginButton.OnClickListener() {
+    Button.OnClickListener LoginOnClick = new Button.OnClickListener() {
         @Override
         public void onClick(View v) {
 
@@ -32,7 +32,7 @@ public class LoginActivity extends Activity {
     private TextView ErrorField;
     private String Username;
     private String Password;
-    private LoginButton mBtnFb;
+    private Button mBtnFb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +46,7 @@ public class LoginActivity extends Activity {
         UsernameField = (EditText) findViewById(R.id.login_username);
         PasswordField = (EditText) findViewById(R.id.login_password);
         ErrorField = (TextView) findViewById(R.id.error_messages);
-        mBtnFb = (LoginButton) findViewById(R.id.btn_fb_login);
+        mBtnFb = (Button) findViewById(R.id.btn_fb_login);
         mBtnFb.setOnClickListener(LoginOnClick);
 
     }

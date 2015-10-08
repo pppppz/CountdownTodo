@@ -31,6 +31,8 @@ import com.parse.ParseUser;
 import java.util.ArrayList;
 import java.util.List;
 
+import jp.wasabeef.recyclerview.animators.SlideInUpAnimator;
+
 public class TaskList_Fragment extends Fragment {
 
 
@@ -48,7 +50,6 @@ public class TaskList_Fragment extends Fragment {
 
             /**addToBackStack for when add task activity has completed will be back into this page.**/
             FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
-            int container = R.id.frame_container;
             Fragment fragment = new AddTask_Fragment();
             fragmentManager.beginTransaction().add(R.id.frame_container, fragment).addToBackStack(null).commit();
             fabBtn.hide();
@@ -57,6 +58,8 @@ public class TaskList_Fragment extends Fragment {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private List<Task> mData = new ArrayList<>();
+
+
     RecyclerView.OnItemTouchListener recycleViewOnTouchListener = new RecyclerItemClickListener(fragmentActivity, new RecyclerItemClickListener.OnItemClickListener() {
         @Override
         public void onItemClick(View view, final int position) {
@@ -147,13 +150,20 @@ public class TaskList_Fragment extends Fragment {
         @Override
         public void onRefresh() {
             updateData();
+            mAdapter.notifyDataSetChanged();
         }
     };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        fragmentActivity = getActivity();
 
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
     }
 
     @Override
@@ -183,13 +193,12 @@ public class TaskList_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.tasklist_fragment, container, false);
-        fragmentActivity = getActivity();
+
 
         fabBtn = (FloatingActionButton) view.findViewById(R.id.FAB_MAIN);
         fabBtn.setOnClickListener(fabOnClick);
 
         PullToRefresh = (SwipeRefreshLayout) view.findViewById(R.id.swipe_container);
-
         PullToRefresh.setOnRefreshListener(pullToRefreshListener);
         PullToRefresh.setColorSchemeColors(R.color.orange, R.color.green, R.color.blue);
         PullToRefresh.setColorSchemeResources(android.R.color.holo_blue_bright, android.R.color.holo_green_light, android.R.color.holo_red_light, android.R.color.white); //set theme loading when pull
@@ -204,8 +213,10 @@ public class TaskList_Fragment extends Fragment {
 
         // create adapter for put on array from class task
         mAdapter = new ListTaskAdapter(fragmentActivity, mData);
-        mAdapter.notifyDataSetChanged(); //set for check if data in array list change it's ll refresh
+        //   mAdapter.notifyDataSetChanged(); //set for check if data in array list change it's ll refresh
         mRecyclerView.setAdapter(mAdapter);
+        mRecyclerView.setHasFixedSize(true);
+        mRecyclerView.setItemAnimator(new SlideInUpAnimator());
 
 
         //set list view can listen the event when click some row
@@ -216,7 +227,7 @@ public class TaskList_Fragment extends Fragment {
         return view;
     }
 
-    public void updateData() {
+    private void updateData() {
 
         //pattern query
         ParseQuery<Task> query = ParseQuery.getQuery(Task.class);
@@ -231,15 +242,18 @@ public class TaskList_Fragment extends Fragment {
                 mData.clear();
                 if (error == null) {
                     for (int i = 0; i < tasks.size(); i++) {
+                        Task t = tasks.get(i);
+                        Log.d("ptest", "task " + t.getTitle());
                         mData.add(tasks.get(i));
                     }
+                    PullToRefresh.setRefreshing(false);
+                    mAdapter.notifyDataSetChanged();
+                    Log.d("ptest", "updated data");
                 } else {
                     Log.e("ParseException : ", String.valueOf(error));
                 }
             }
         });
-        PullToRefresh.setRefreshing(false);
-        mAdapter.notifyDataSetChanged();
 
 
     }

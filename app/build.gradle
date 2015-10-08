@@ -70,4 +70,5 @@ dependencies {
     compile 'com.parse.bolts:bolts-android:1.2.1'
     compile 'com.android.support:multidex:1.0.1'
     compile files('libs/Parse-1.10.2.jar')
+    compile 'jp.wasabeef:recyclerview-animators:1.2.0@aar'
 }
