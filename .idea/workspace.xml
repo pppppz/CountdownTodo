@@ -10,22 +10,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d36f65a-224f-4324-958b-b824d8c680fa" name="Default" comment="fix facebook signup can sign into parse , fix toolbar overlapped">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tasklist_fragment.xml" />
-      <change type="DELETED" beforePath="D:\GitHub\CountdownTodo\app\src\main\res\layout\mainlist_fragment.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/menu48.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/menu48.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/AddTask_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/AddTask_Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/EditTaskFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/EditTaskFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Adapter/PagerAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Adapter/PagerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Listener/RecyclerViewOnScrollListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/Listener/RecyclerViewOnScrollListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/addtask_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/addtask_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/color.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/color.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+    <list default="true" id="1d36f65a-224f-4324-958b-b824d8c680fa" name="Default" comment="-fix toolbar overlap with tab by remove layout_scrollflag from toolbar&#10;-fix fragment over fragment&#10;-fix flow of AddTask backStack to TaskList&#10;&#10;&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\CountdownTodo\app\src\main\java\com\app\countdowntodolist\MainList_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/TaskList_Fragment.java" />
     </list>
     <ignored path="CountdownTodo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,7 +46,7 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="37" />
+              <caret line="2" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -73,7 +59,7 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -83,8 +69,10 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding />
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,8 +103,8 @@
       <file leaf-file-name="AddTask_Fragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/AddTask_Fragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.17288801">
-              <caret line="78" column="103" selection-start-line="78" selection-start-column="103" selection-end-line="78" selection-end-column="103" />
+            <state vertical-scroll-proportion="0.62333333">
+              <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -129,6 +117,7 @@
               <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2092#2093#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -2129,12 +2118,12 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/AddTask_Fragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/MainList_Fragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/color.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/mainlist_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/addtask_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/AddTask_Fragment.java" />
       </list>
     </option>
   </component>
@@ -2691,7 +2680,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444226681887</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="-fix toolbar overlap with tab by remove layout_scrollflag from toolbar&#10;-fix fragment over fragment&#10;-fix flow of AddTask backStack to TaskList&#10;&#10;&#10;">
+      <created>1444288582955</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1444288582955</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2716,11 +2711,11 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.399361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.428115" sideWeight="0.5085494" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3312034" sideWeight="0.6354109" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.49558985" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4685836" sideWeight="0.5237045" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3312034" sideWeight="0.3662438" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3312034" sideWeight="0.36458907" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.4911797" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24972437" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2758,7 +2753,8 @@
     <MESSAGE value="-remove navigation drawer instead by tablayout in MainActivity&#10;" />
     <MESSAGE value="Could sign up &amp; get user profile from facebook but still can't save data into parse because ParseException had showed &quot;Password cannot be missing or blank&quot;&#10;" />
     <MESSAGE value="fix facebook signup can sign into parse , fix toolbar overlapped" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix facebook signup can sign into parse , fix toolbar overlapped" />
+    <MESSAGE value="-fix toolbar overlap with tab by remove layout_scrollflag from toolbar&#10;-fix fragment over fragment&#10;-fix flow of AddTask backStack to TaskList&#10;&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="-fix toolbar overlap with tab by remove layout_scrollflag from toolbar&#10;-fix fragment over fragment&#10;-fix flow of AddTask backStack to TaskList&#10;&#10;&#10;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -2774,6 +2770,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2825,7 +2822,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="70" selection-start-line="58" selection-start-column="58" selection-end-line="58" selection-end-column="70" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3109,6 +3108,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22200392">
           <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3116,6 +3116,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.0687623">
           <caret line="76" column="49" selection-start-line="76" selection-start-column="49" selection-end-line="76" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3144,7 +3145,7 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="37" />
+          <caret line="2" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -3155,7 +3156,7 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -3163,8 +3164,10 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/User_Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3174,6 +3177,7 @@
           <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2092#2093#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3188,8 +3192,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/countdowntodolist/AddTask_Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.17288801">
-          <caret line="78" column="103" selection-start-line="78" selection-start-column="103" selection-end-line="78" selection-end-column="103" />
+        <state vertical-scroll-proportion="0.62333333">
+          <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
           <folding />
         </state>
       </provider>
