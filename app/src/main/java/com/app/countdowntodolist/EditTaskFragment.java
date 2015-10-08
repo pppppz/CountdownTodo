@@ -109,7 +109,7 @@ public class EditTaskFragment extends Fragment {
             Toast.makeText(fragmentActivity, "Update completed", Toast.LENGTH_SHORT).show();
 
             //finish this class and swap to Main class
-            Fragment fragment = new MainList_Fragment();
+            Fragment fragment = new TaskList_Fragment();
             FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
             new switchFragment(fragment, fragmentManager).doSwitch();
 

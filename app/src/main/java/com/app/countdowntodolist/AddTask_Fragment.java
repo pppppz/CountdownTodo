@@ -20,7 +20,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
-import com.app.countdowntodolist.Function.switchFragment;
 import com.app.countdowntodolist.Model.Task;
 import com.parse.ParseACL;
 import com.parse.ParseException;
@@ -73,10 +72,17 @@ public class AddTask_Fragment extends Fragment {
 
 
                         //finish this class and swap to Main class
-                        Fragment fragment = new MainList_Fragment();
+
+
                         FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
-                        fragmentManager.popBackStack("MainList_Fragment", FragmentManager.POP_BACK_STACK_INCLUSIVE);
-                        new switchFragment(fragment, fragmentManager).doSwitch();
+                        fragmentManager.beginTransaction().remove(AddTask_Fragment.this).commit();
+                        //fragmentManager.popBackStackImmediate(fragmentActivity.getClass().getName(), 0);
+                        //    fragmentManager.popBackStack("TaskList_Fragment",FragmentManager.POP_BACK_STACK_INCLUSIVE);
+
+                        //
+                        //  FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
+                        //fragmentManager.popBackStack("TaskList_Fragment", FragmentManager.POP_BACK_STACK_INCLUSIVE);
+                        //    new switchFragment(fragment, fragmentManager).doSwitch();
 
 
 
@@ -161,6 +167,7 @@ public class AddTask_Fragment extends Fragment {
 
         return view;
     }
+
 
     @Override
     public void onResume() {

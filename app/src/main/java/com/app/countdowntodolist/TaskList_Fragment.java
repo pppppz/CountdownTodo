@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
@@ -30,7 +31,7 @@ import com.parse.ParseUser;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainList_Fragment extends Fragment {
+public class TaskList_Fragment extends Fragment {
 
 
     public static SwipeRefreshLayout PullToRefresh;
@@ -43,14 +44,19 @@ public class MainList_Fragment extends Fragment {
 
         @Override
         public void onClick(View v) {
-            new switchFragment(new AddTask_Fragment(), fragmentActivity.getSupportFragmentManager()).doSwitch();
+
+
+            /**addToBackStack for when add task activity has completed will be back into this page.**/
+            FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
+            int container = R.id.frame_container;
+            Fragment fragment = new AddTask_Fragment();
+            fragmentManager.beginTransaction().add(R.id.frame_container, fragment).addToBackStack(null).commit();
             fabBtn.hide();
         }
     };
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private List<Task> mData = new ArrayList<>();
-
     RecyclerView.OnItemTouchListener recycleViewOnTouchListener = new RecyclerItemClickListener(fragmentActivity, new RecyclerItemClickListener.OnItemClickListener() {
         @Override
         public void onItemClick(View view, final int position) {
@@ -92,7 +98,7 @@ public class MainList_Fragment extends Fragment {
                     else if (items[item] == items[2]) {
                         //get objectid
                         String object = task.getObjectId();
-                        Log.e("MainList_Fragment ", object);
+                        Log.e("TaskList_Fragment ", object);
 
                         //start new activity and swap it
 
@@ -136,12 +142,11 @@ public class MainList_Fragment extends Fragment {
         }
     }
     );
+
     SwipeRefreshLayout.OnRefreshListener pullToRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
         public void onRefresh() {
-
             updateData();
-
         }
     };
 
@@ -156,6 +161,7 @@ public class MainList_Fragment extends Fragment {
         super.onResume();
 
         updateData();
+        fabBtn.show();
     }
 
     @Override
@@ -176,7 +182,7 @@ public class MainList_Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.mainlist_fragment, container, false);
+        view = inflater.inflate(R.layout.tasklist_fragment, container, false);
         fragmentActivity = getActivity();
 
         fabBtn = (FloatingActionButton) view.findViewById(R.id.FAB_MAIN);
@@ -205,6 +211,7 @@ public class MainList_Fragment extends Fragment {
         //set list view can listen the event when click some row
         mRecyclerView.addOnItemTouchListener(recycleViewOnTouchListener);
         mRecyclerView.addOnScrollListener(new RecyclerViewOnScrollListener());
+
 
         return view;
     }

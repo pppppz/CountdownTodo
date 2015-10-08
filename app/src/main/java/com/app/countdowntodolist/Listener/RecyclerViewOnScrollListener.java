@@ -3,7 +3,7 @@ package com.app.countdowntodolist.Listener;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import com.app.countdowntodolist.MainList_Fragment;
+import com.app.countdowntodolist.TaskList_Fragment;
 
 
 public class RecyclerViewOnScrollListener extends RecyclerView.OnScrollListener {
@@ -14,15 +14,15 @@ public class RecyclerViewOnScrollListener extends RecyclerView.OnScrollListener 
         //super.onScrollStateChanged(recyclerView, newState);
         try {
 
-            int firstPos = MainList_Fragment.layoutManager.findFirstCompletelyVisibleItemPosition();
+            int firstPos = TaskList_Fragment.layoutManager.findFirstCompletelyVisibleItemPosition();
 
             if (firstPos > 0) {
-                MainList_Fragment.PullToRefresh.setEnabled(false);
+                TaskList_Fragment.PullToRefresh.setEnabled(false);
             } else {
-                MainList_Fragment.PullToRefresh.setEnabled(true);
-                if (MainList_Fragment.mRecyclerView.getScrollState() == 1)
-                    if (MainList_Fragment.PullToRefresh.isRefreshing())
-                        MainList_Fragment.mRecyclerView.stopScroll();
+                TaskList_Fragment.PullToRefresh.setEnabled(true);
+                if (TaskList_Fragment.mRecyclerView.getScrollState() == 1)
+                    if (TaskList_Fragment.PullToRefresh.isRefreshing())
+                        TaskList_Fragment.mRecyclerView.stopScroll();
             }
 
         } catch (Exception e) {

@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.app.countdowntodolist.Location_Fragment;
-import com.app.countdowntodolist.MainList_Fragment;
+import com.app.countdowntodolist.TaskList_Fragment;
 import com.app.countdowntodolist.User_Fragment;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
@@ -22,13 +22,13 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                return new MainList_Fragment();
+                return new TaskList_Fragment();
             case 1:
                 return new Location_Fragment();
             case 2:
                 return new User_Fragment();
             default:
-                return new MainList_Fragment();
+                return new TaskList_Fragment();
         }
     }
  

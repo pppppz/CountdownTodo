@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.parse.ParseFile;
 import com.parse.ParseUser;
@@ -63,8 +62,6 @@ public class User_Fragment extends Fragment {
 
         mEmailID.setText(parseUser.getEmail());
         mUsername.setText(parseUser.getUsername());
-
-        Toast.makeText(fragmentActivity, "Welcome back " + mUsername.getText().toString(), Toast.LENGTH_SHORT).show();
 
     }
 
