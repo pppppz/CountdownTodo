@@ -17,11 +17,23 @@ import com.parse.ParseUser;
 
 public class LoginActivity extends Activity {
 
-    Button.OnClickListener LoginOnClick = new Button.OnClickListener() {
+    Button.OnClickListener FacebookOnClick = new Button.OnClickListener() {
         @Override
         public void onClick(View v) {
 
             Intent intent = new Intent(LoginActivity.this, FacebookLoginActivity.class);
+            startActivity(intent);
+            finish();
+
+        }
+    };
+
+
+    Button.OnClickListener TwitterOnClick = new Button.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            Intent intent = new Intent(LoginActivity.this, TwitterLoginActivity.class);
             startActivity(intent);
             finish();
 
@@ -32,7 +44,7 @@ public class LoginActivity extends Activity {
     private TextView ErrorField;
     private String Username;
     private String Password;
-    private Button mBtnFb;
+    private Button mBtnFb, mBtnTwitter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +58,12 @@ public class LoginActivity extends Activity {
         UsernameField = (EditText) findViewById(R.id.login_username);
         PasswordField = (EditText) findViewById(R.id.login_password);
         ErrorField = (TextView) findViewById(R.id.error_messages);
-        mBtnFb = (Button) findViewById(R.id.btn_fb_login);
-        mBtnFb.setOnClickListener(LoginOnClick);
+
+        mBtnFb = (Button) findViewById(R.id.facebook_login_button);
+        mBtnFb.setOnClickListener(FacebookOnClick);
+
+        mBtnTwitter = (Button) findViewById(R.id.twitter_login_button);
+        mBtnTwitter.setOnClickListener(TwitterOnClick);
 
     }
 
@@ -97,7 +113,7 @@ public class LoginActivity extends Activity {
             pd.setIndeterminate(false);
             pd.setMax(100);
             pd.setProgress(0);
-//            pd.show();
+            pd.show();
 
         }
 
@@ -105,13 +121,14 @@ public class LoginActivity extends Activity {
             ParseUser.logInInBackground(Username, Password, new LogInCallback() {
                 @Override
                 public void done(ParseUser user, ParseException e) {
+
                     if (user != null) {
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
                         finish();
                     } else {
                         // Signup failed. Look at the ParseException to see what happened.
-                        switch(e.getCode()){
+                        switch (e.getCode()) {
                             case ParseException.USERNAME_TAKEN:
                                 ErrorField.setText("Sorry, this username has already been taken.");
                                 break;
@@ -126,12 +143,10 @@ public class LoginActivity extends Activity {
                                 break;
                             default:
                                 ErrorField.setText(e.getLocalizedMessage());
-                              //  Log.e("Login Activity" , String.valueOf(e));
+                                //  Log.e("Login Activity" , String.valueOf(e));
                                 break;
                         }
                     }
-
-
                 }
             });
 

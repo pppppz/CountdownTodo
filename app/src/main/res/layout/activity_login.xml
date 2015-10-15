@@ -33,16 +33,31 @@
             android:orientation="vertical"
             android:visibility="visible">
 
-            <EditText
-                android:id="@+id/login_username"
-                style="@style/ParseLoginUI.EditText"
+
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/username" />
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/login_username"
+                    style="@style/ParseLoginUI.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username" />
+                />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
 
             <EditText
                 android:id="@+id/login_password"
-                style="@style/ParseLoginUI.EditText"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
@@ -50,6 +65,8 @@
                 android:hint="@string/password_label"
                 android:inputType="textPassword"
                 android:selectAllOnFocus="true" />
+
+            </android.support.design.widget.TextInputLayout>
 
             <LinearLayout
                 android:id="@+id/parse_buttons"
@@ -88,7 +105,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btn_fb_login"
+                android:id="@+id/facebook_login_button"
                 style="@style/ParseLoginUI.Button.ThirdPartyLogin"
                 android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
                 android:background="@drawable/com_parse_ui_facebook_login_button_background_selector"
@@ -96,7 +113,7 @@
                 android:text="@string/facebook_login_button_label" />
 
             <Button
-                android:id="@+id/twitter_login"
+                android:id="@+id/twitter_login_button"
                 style="@style/ParseLoginUI.Button.ThirdPartyLogin"
                 android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
                 android:background="@drawable/com_parse_ui_twitter_login_button_background_selector"

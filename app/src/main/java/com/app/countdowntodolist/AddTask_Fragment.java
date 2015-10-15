@@ -37,18 +37,19 @@ public class AddTask_Fragment extends Fragment {
     private FloatingActionButton mFab;
     private int year, day, month, hour, minute;
     private FragmentActivity fragmentActivity;
+
     FloatingActionButton.OnClickListener floatingButtonListener = new FloatingActionButton.OnClickListener() {
         @Override
         public void onClick(View v) {
 
             if (TaskInput.getText().length() > 0) {
 
-                // Set up a progress dialog
+                /**  Set up a progress dialog **/
                 final ProgressDialog dialog = new ProgressDialog(fragmentActivity);
                 dialog.setMessage("updating please wait");
                 dialog.show();
 
-                //get data from task_input and set data by method in task.class
+                /** get data from task_input and set data by method in task.class **/
                 Task t = new Task();
                 t.setACL(new ParseACL(ParseUser.getCurrentUser()));
                 t.setUser(ParseUser.getCurrentUser());
@@ -58,34 +59,19 @@ public class AddTask_Fragment extends Fragment {
 
 
                 DateTime date = new DateTime(year, month, day, hour, minute);
-                Log.e("from add" , date.toString());
                 t.setDeadline(date.toDate());
-                //  t.saveEventually(); // save in to parse.com
-
                 t.saveInBackground(new SaveCallback() {
                     @Override
                     public void done(ParseException e) {
-                        //hidden soft keyboard before swap fragment
+                        /** hidden soft keyboard before swap fragment **/
                         InputMethodManager inputManager = (InputMethodManager) fragmentActivity.getSystemService(Context.INPUT_METHOD_SERVICE);
-                        inputManager.hideSoftInputFromWindow(fragmentActivity.getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+                        inputManager.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
                         dialog.dismiss();
 
-
-                        //finish this class and swap to Main class
-
-
+                        /** finish this class and swap to Main class **/
+                        TaskList_Fragment.fabBtn.show();
                         FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
                         fragmentManager.beginTransaction().remove(AddTask_Fragment.this).commit();
-                        //fragmentManager.popBackStackImmediate(fragmentActivity.getClass().getName(), 0);
-                        //    fragmentManager.popBackStack("TaskList_Fragment",FragmentManager.POP_BACK_STACK_INCLUSIVE);
-
-                        //
-                        //  FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
-                        //fragmentManager.popBackStack("TaskList_Fragment", FragmentManager.POP_BACK_STACK_INCLUSIVE);
-                        //    new switchFragment(fragment, fragmentManager).doSwitch();
-
-
-
                     }
                 });
 
@@ -144,6 +130,7 @@ public class AddTask_Fragment extends Fragment {
                              Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.addtask_fragment, container, false);
+        TaskList_Fragment.fabBtn.hide();
         fragmentActivity = getActivity();
         TaskInput = (EditText) view.findViewById(R.id.task_input);
         DesInput = (EditText) view.findViewById(R.id.etDescription);
@@ -174,7 +161,6 @@ public class AddTask_Fragment extends Fragment {
         super.onResume();
 
         DateTime dateTime = DateTime.now();
-        //Calendar c = Calendar.getInstance();
         year = dateTime.getYear();
 
         day = dateTime.getDayOfMonth();

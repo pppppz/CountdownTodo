@@ -36,10 +36,14 @@ android {
         }
     }
     dexOptions {
-        preDexLibraries = false
+        javaMaxHeapSize "4g"
+        //preDexLibraries = false
+        incremental true
     }
     productFlavors {
     }
+    useLibrary 'org.apache.http.legacy'
+
 }
 
 afterEvaluate {
@@ -71,4 +75,6 @@ dependencies {
     compile 'com.android.support:multidex:1.0.1'
     compile files('libs/Parse-1.10.2.jar')
     compile 'jp.wasabeef:recyclerview-animators:1.2.0@aar'
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile files('libs/Foursquare/foursquare-api-1.0.2.jar')
 }

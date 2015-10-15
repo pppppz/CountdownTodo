@@ -69,7 +69,6 @@ public class FacebookLoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         //  Use this to output your Facebook Key Hash to Logs
         try {
             PackageInfo info = getPackageManager().getPackageInfo(
@@ -100,10 +99,8 @@ public class FacebookLoginActivity extends AppCompatActivity {
                 } else if (user.isNew()) {
                     Log.d("MyApp", "User signed up and logged in through Facebook!");
                     getUserDetailsFromFB();
-                    Log.d("ptest", "after get user details");
                     Intent intent = new Intent(FacebookLoginActivity.this, MainActivity.class);
                     startActivity(intent);
-                    Log.d("ptest", "after start mainactivity");
                     finish();
 
                 } else {
@@ -147,7 +144,7 @@ public class FacebookLoginActivity extends AppCompatActivity {
 
     private void saveNewUser(String name, String firstName, String lastName, String user_id, String email) {
         parseUser = ParseUser.getCurrentUser();
-        parseUser.setUsername(name);
+        parseUser.put("name", name);
         parseUser.setEmail(email);
         parseUser.put("first_name", firstName);
         parseUser.put("last_name", lastName);
@@ -221,6 +218,7 @@ public class FacebookLoginActivity extends AppCompatActivity {
         return id == R.id.action_settings || super.onOptionsItemSelected(item);
     }
 
+
     class ProfilePhotoAsync extends AsyncTask<String, String, Bitmap> {
         Profile profile;
 
@@ -245,4 +243,5 @@ public class FacebookLoginActivity extends AppCompatActivity {
 
     }
 }
+
 

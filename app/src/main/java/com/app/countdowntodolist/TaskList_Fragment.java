@@ -1,5 +1,6 @@
 package com.app.countdowntodolist;
 
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.graphics.Paint;
 import android.os.Bundle;
@@ -19,7 +20,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.app.countdowntodolist.Adapter.ListTaskAdapter;
-import com.app.countdowntodolist.Function.switchFragment;
 import com.app.countdowntodolist.Listener.RecyclerItemClickListener;
 import com.app.countdowntodolist.Listener.RecyclerViewOnScrollListener;
 import com.app.countdowntodolist.Model.Task;
@@ -39,9 +39,10 @@ public class TaskList_Fragment extends Fragment {
     public static SwipeRefreshLayout PullToRefresh;
     public static RecyclerView mRecyclerView;
     public static LinearLayoutManager layoutManager;
+    public static FloatingActionButton fabBtn;
+    ProgressDialog dialog;
     private View view;
     private FragmentActivity fragmentActivity;
-    private FloatingActionButton fabBtn;
     View.OnClickListener fabOnClick = new FloatingActionButton.OnClickListener() {
 
         @Override
@@ -51,15 +52,13 @@ public class TaskList_Fragment extends Fragment {
             /**addToBackStack for when add task activity has completed will be back into this page.**/
             FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
             Fragment fragment = new AddTask_Fragment();
-            fragmentManager.beginTransaction().add(R.id.frame_container, fragment).addToBackStack(null).commit();
-            fabBtn.hide();
+            fragmentManager.beginTransaction()
+                    .add(R.id.frame_container, fragment).addToBackStack(null).commit();
         }
     };
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private List<Task> mData = new ArrayList<>();
-
-
     RecyclerView.OnItemTouchListener recycleViewOnTouchListener = new RecyclerItemClickListener(fragmentActivity, new RecyclerItemClickListener.OnItemClickListener() {
         @Override
         public void onItemClick(View view, final int position) {
@@ -109,7 +108,9 @@ public class TaskList_Fragment extends Fragment {
                         bundle.putString("objectID", object);
                         Fragment fragment = new EditTaskFragment();
                         fragment.setArguments(bundle);
-                        new switchFragment(fragment, fragmentActivity.getSupportFragmentManager()).doSwitch();
+                        FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
+                        fragmentManager.beginTransaction()
+                                .replace(R.id.frame_container, fragment).addToBackStack(null).commit();
                     } else {
 
                         // create dialog for ask to delete
@@ -169,7 +170,6 @@ public class TaskList_Fragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-
         updateData();
         fabBtn.show();
     }
@@ -194,32 +194,38 @@ public class TaskList_Fragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.tasklist_fragment, container, false);
 
+        /**declare dialog for loading**/
+        dialog = new ProgressDialog(fragmentActivity);
+        dialog.setMessage(getString(R.string.loading));
 
+
+        /**floating button**/
         fabBtn = (FloatingActionButton) view.findViewById(R.id.FAB_MAIN);
         fabBtn.setOnClickListener(fabOnClick);
 
+
+        /**swipeRefresh**/
         PullToRefresh = (SwipeRefreshLayout) view.findViewById(R.id.swipe_container);
         PullToRefresh.setOnRefreshListener(pullToRefreshListener);
         PullToRefresh.setColorSchemeColors(R.color.orange, R.color.green, R.color.blue);
         PullToRefresh.setColorSchemeResources(android.R.color.holo_blue_bright, android.R.color.holo_green_light, android.R.color.holo_red_light, android.R.color.white); //set theme loading when pull
 
 
-        // declare list view and set adapter to list view (UI)
+        /**declare list view and set adapter to list view (UI)**/
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         mLayoutManager = new LinearLayoutManager(fragmentActivity);
         mRecyclerView.setLayoutManager(mLayoutManager);
         layoutManager = (LinearLayoutManager) mRecyclerView.getLayoutManager();
 
 
-        // create adapter for put on array from class task
+        /** create adapter for put on array from class task **/
         mAdapter = new ListTaskAdapter(fragmentActivity, mData);
-        //   mAdapter.notifyDataSetChanged(); //set for check if data in array list change it's ll refresh
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setItemAnimator(new SlideInUpAnimator());
 
 
-        //set list view can listen the event when click some row
+        /**set list view can listen the event when click some row **/
         mRecyclerView.addOnItemTouchListener(recycleViewOnTouchListener);
         mRecyclerView.addOnScrollListener(new RecyclerViewOnScrollListener());
 
@@ -229,11 +235,14 @@ public class TaskList_Fragment extends Fragment {
 
     private void updateData() {
 
+//        dialog.show();
+
         //pattern query
         ParseQuery<Task> query = ParseQuery.getQuery(Task.class);
         query.whereEqualTo("user", ParseUser.getCurrentUser());
         query.addDescendingOrder("createdAt");
         //  query.setCachePolicy(ParseQuery.CachePolicy.CACHE_THEN_NETWORK);
+
 
         query.findInBackground(new FindCallback<Task>() {
             @Override
@@ -250,8 +259,11 @@ public class TaskList_Fragment extends Fragment {
                     mAdapter.notifyDataSetChanged();
                     Log.d("ptest", "updated data");
                 } else {
+
                     Log.e("ParseException : ", String.valueOf(error));
                 }
+                //   dialog.dismiss();
+
             }
         });
 
