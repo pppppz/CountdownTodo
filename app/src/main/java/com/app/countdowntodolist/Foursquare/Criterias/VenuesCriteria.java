@@ -10,6 +10,7 @@ public class VenuesCriteria {
     private int mQuantity = 10;
     private Location mLocation = new Location(LocationManager.GPS_PROVIDER);
     private VenuesCriteriaIntent intent = VenuesCriteriaIntent.CHECKIN;
+    private String section = "topPicks";
 
     public String getQuery() {
         return mQuery;
@@ -49,6 +50,14 @@ public class VenuesCriteria {
 
     public void setIntent(VenuesCriteriaIntent intent) {
         this.intent = intent;
+    }
+
+    public String getSection() {
+        return section;
+    }
+
+    public void setSection(String section) {
+        this.section = section;
     }
 
     public enum VenuesCriteriaIntent {

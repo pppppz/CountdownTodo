@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:layout_height="wrap_content"
+    android:contextClickable="false"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/venue_title"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:text="title"
+        android:textColor="@color/primary_text_default_material_light"
+        android:textSize="16sp" />
 
 
     <TextView
         android:id="@+id/address_4sq"
 
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/venue_title"
-        android:layout_weight="1" />
+        android:paddingLeft="16dp"
+        android:text="address"
+        android:textColor="@color/secondary_text_default_material_light"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/distance"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/address_4sq"
-        android:layout_weight="1" />
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:text="distance"
+        android:textColor="@color/secondary_text_default_material_light"
+        android:textSize="14sp" />
 
 </LinearLayout>

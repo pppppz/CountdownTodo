@@ -128,8 +128,6 @@ public class TwitterLoginActivity extends AppCompatActivity {
                 });
             }
         });
-
-
     }
 
     private void saveNewUser(String name, String username) {
@@ -151,7 +149,6 @@ public class TwitterLoginActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
 
     public void getUserDetailsFromTwitter() throws IOException {

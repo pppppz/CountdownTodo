@@ -11,10 +11,9 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import com.app.countdowntodolist.Adapter.PagerAdapter;
+import com.app.countdowntodolist.Model.Current;
 import com.app.countdowntodolist.Model.Task;
 import com.facebook.appevents.AppEventsLogger;
 import com.parse.ParseAnalytics;
@@ -49,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main_activity);
         fragmentManager = getSupportFragmentManager();
         parseLogIn();
         initToolbar();
@@ -71,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
         //set tab
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.schedule48));
-        tabLayout.addTab(tabLayout.newTab().setText("none"));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.menu48));
+
 
         viewPager = (ViewPager) findViewById(R.id.pager);
         PagerAdapter adapter = new PagerAdapter(fragmentManager, tabLayout.getTabCount());
@@ -109,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         drawerToggle.onConfigurationChanged(newConfig);
     }
 
+    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu_48; this adds items to the action bar if it is present.
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
+*/
     private void parseLogIn() {
 
         // get user data if null go to login
@@ -153,6 +153,8 @@ public class MainActivity extends AppCompatActivity {
         ParseAnalytics.trackAppOpenedInBackground(getIntent());
         //register class use in project such as this project use table Car in parse also register subclass Car (in Project)
         ParseObject.registerSubclass(Task.class);
+        ParseObject.registerSubclass(Current.class);
+
 
 
     }

@@ -1,5 +1,6 @@
 package com.app.countdowntodolist.Foursquare.Listener;
 
+
 import com.app.countdowntodolist.Foursquare.Model.Venue;
 
 import java.util.List;

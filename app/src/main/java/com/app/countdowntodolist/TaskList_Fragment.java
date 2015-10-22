@@ -146,7 +146,6 @@ public class TaskList_Fragment extends Fragment {
         }
     }
     );
-
     SwipeRefreshLayout.OnRefreshListener pullToRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
         public void onRefresh() {

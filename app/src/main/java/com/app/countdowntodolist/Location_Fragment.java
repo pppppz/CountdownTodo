@@ -14,10 +14,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.app.countdowntodolist.Adapter.ListNearbyAdapter;
+import com.app.countdowntodolist.Constants.Constants;
 import com.app.countdowntodolist.Foursquare.Criterias.VenuesCriteria;
-import com.app.countdowntodolist.Foursquare.FoursquareConstants;
 import com.app.countdowntodolist.Foursquare.Main.FoursquareVenuesNearbyRequest;
 import com.app.countdowntodolist.Foursquare.Model.Venue;
+import com.app.countdowntodolist.Function.DividerItemDecoration;
 import com.app.countdowntodolist.Function.getCurrentLocation;
 import com.app.countdowntodolist.Listener.RecyclerViewOnScrollListener;
 
@@ -36,6 +37,7 @@ public class Location_Fragment extends Fragment {
     private RecyclerView.Adapter mAdapter;
     private List<Venue> nearbyList = new ArrayList<>();
     private SwipeRefreshLayout swipeRefresh;
+
     SwipeRefreshLayout.OnRefreshListener pullToRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
         public void onRefresh() {
@@ -55,6 +57,8 @@ public class Location_Fragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_location, container, false);
         /**declare list view and set adapter to list view (UI)**/
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view_location);
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(fragmentActivity, R.drawable.divider));
+
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(fragmentActivity);
         mRecyclerView.setLayoutManager(mLayoutManager);
         layoutManager = (LinearLayoutManager) mRecyclerView.getLayoutManager();
@@ -67,7 +71,7 @@ public class Location_Fragment extends Fragment {
 
 
         /**set list view can listen the event when click some row **/
-        // mRecyclerView.addOnItemTouchListener(recycleViewOnTouchListener);
+        //mRecyclerView.addOnItemTouchListener(recycleViewOnTouchListener);
         mRecyclerView.addOnScrollListener(new RecyclerViewOnScrollListener());
         swipeRefresh = (SwipeRefreshLayout) view.findViewById(R.id.swipe_container_location);
         swipeRefresh.setOnRefreshListener(pullToRefreshListener);
@@ -84,7 +88,8 @@ public class Location_Fragment extends Fragment {
 
     public void getVenuesNearby(VenuesCriteria criteria) {
 
-        FoursquareVenuesNearbyRequest request = new FoursquareVenuesNearbyRequest(fragmentActivity, criteria);
+        /** true = explore / false = search **/
+        FoursquareVenuesNearbyRequest request = new FoursquareVenuesNearbyRequest(fragmentActivity, criteria, true);
         request.execute(getAccessToken());
 
         List<Venue> venues;
@@ -101,8 +106,8 @@ public class Location_Fragment extends Fragment {
 
     private String getAccessToken() {
         if (mAccessToken.equals("")) {
-            SharedPreferences settings = fragmentActivity.getSharedPreferences(FoursquareConstants.SHARED_PREF_FILE, 0);
-            mAccessToken = settings.getString(FoursquareConstants.ACCESS_TOKEN, "");
+            SharedPreferences settings = fragmentActivity.getSharedPreferences(Constants.SHARED_PREF_FILE, 0);
+            mAccessToken = settings.getString(Constants.ACCESS_TOKEN, "");
         }
         return mAccessToken;
     }
@@ -111,14 +116,16 @@ public class Location_Fragment extends Fragment {
 
         /** setting venues criteria **/
         VenuesCriteria venuesCriteria = new VenuesCriteria();
-        venuesCriteria.setQuantity(5);
+        venuesCriteria.setQuantity(15);
         venuesCriteria.setRadius(1000);
+        venuesCriteria.setSection("topPicks");
         venuesCriteria.setIntent(VenuesCriteria.VenuesCriteriaIntent.BROWSE);
         Location locationHere = getCurrentLocation.get(getActivity());
         venuesCriteria.setLocation(locationHere);
 
         /** get venues **/
         getVenuesNearby(venuesCriteria);
-        mAdapter.notifyDataSetChanged();
     }
+
+
 }

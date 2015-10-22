@@ -3,7 +3,7 @@
     <EditTextPreference
         android:key="username"
         android:summary="Please provide your username"
-        android:title="Your Name"></EditTextPreference>
+        android:title="Your Name" />
     <CheckBoxPreference
         android:defaultValue="false"
         android:key="applicationUpdates"
@@ -11,10 +11,10 @@
         android:title="Application Updates" />
 
     <ListPreference
-        android:defaultValue="1"
+        android:defaultValue="metric"
         android:entries="@array/listArray"
         android:entryValues="@array/listValues"
-        android:key="downloadType"
-        android:summary="Select the kind of data that you would like to download"
-        android:title="Download Details" />
+        android:key="unitFormat"
+        android:summary="Select the units format"
+        android:title="Units format" />
 </PreferenceScreen>
